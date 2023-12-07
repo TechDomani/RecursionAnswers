@@ -2,7 +2,7 @@
 
 ### Intro
 You must use recursion to solve all these problems unless instructed otherwise even if it would be easier to write them in a different way</br>
-There are stub functions in Recursion.Classes.RecursionExercise.cs</br>
+There are stub functions in Recursion.Classes.RecursionExercise.cs and Recursion.Classes.MergeSort.cs</br>
 
 ### Testing
 Some tests have already been written</br>
