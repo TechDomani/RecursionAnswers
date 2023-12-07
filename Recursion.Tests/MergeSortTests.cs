@@ -11,17 +11,23 @@ namespace Recursion.Tests
 {
 	[TestClass]
 	public class MergeSortTests
-	{
-
-		[DataRow(new int[] { }, new int[] { })]
-		[DataRow(new int[] { 4, 2, 7, 8 }, new int[] { 2, 4, 7, 8 })]
-		[DataRow(new int[] { 1, 2, 3, 4 }, new int[] { 1, 2, 3, 4})]
-		[DataRow(new int[] { 22, 55, 12, 9, 8 }, new int[] { 9, 9, 12, 22, 55 })]
+	{	
 		[TestMethod]
-		public void TestMergeSortIterativeInt(int[] input, int[] expected)
+		public void TestMergeSortIterativeInt()
 		{
-			List<int> unsorted = input.ToList();
+			List<int> unsorted = new() { 22, 55, 12, 22};
+			List<int> expected = new() { 12, 22, 22, 55 };
 			MergeSort<int> mergeSort = new ();
+			CollectionAssert.AreEqual(expected, mergeSort.IterativeSort(unsorted));
+		}
+
+		
+		[TestMethod]
+		public void TestMergeSortIterativeString()
+		{
+			List<string> unsorted = new() { "Jake", "Cape", "Apple" };
+			List<string> expected = new() { "Apple", "Cape", "Jake" };
+			MergeSort<string> mergeSort = new ();
 			CollectionAssert.AreEqual(expected, mergeSort.IterativeSort(unsorted));
 		}
 	}

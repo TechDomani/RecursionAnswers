@@ -7,7 +7,12 @@ namespace Recursion
     {
         static void Main()
         {
-            Console.WriteLine(RecursionExercises.FirstNNumbers(4));
-        }
+            Console.WriteLine(string.Join(",", RecursionExercises.FirstNNumbers(4)));
+
+            MergeSort<string> mergeSort = new ();
+            List<string> toSort = new List<string> { "Hello", "Hard", "Apple" };
+            List<string> sorted = mergeSort.IterativeSort(toSort);
+			Console.WriteLine(string.Join(",", sorted));
+		}
     }
 }
