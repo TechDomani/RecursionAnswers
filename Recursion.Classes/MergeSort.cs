@@ -27,6 +27,19 @@ namespace Recursion.Classes
 			}
 			return queue.Dequeue();
 		}
+
+
+		public List<T> RecursiveSort(List<T> unsorted)
+		{
+			if (unsorted.Count <= 1)
+			{
+				return unsorted;
+			}
+			int mid = unsorted.Count / 2;
+			List<T> leftList = RecursiveSort(unsorted.Take(mid).ToList());
+			List<T> rightList = RecursiveSort(unsorted.Skip(mid).ToList());
+			return Sort(leftList, rightList);
+		}
 		private List<T> Sort(List<T> leftList, List<T> rightList)
 		{
 			List<T> merged = new List<T>();

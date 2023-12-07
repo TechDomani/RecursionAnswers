@@ -11,7 +11,7 @@ namespace Recursion
 
             MergeSort<string> mergeSort = new ();
             List<string> toSort = new List<string> { "Hello", "Hard", "Apple" };
-            List<string> sorted = mergeSort.IterativeSort(toSort);
+            List<string> sorted = mergeSort.RecursiveSort(toSort);
 			Console.WriteLine(string.Join(",", sorted));
 		}
     }
