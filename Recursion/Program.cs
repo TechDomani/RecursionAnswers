@@ -7,7 +7,7 @@ namespace Recursion
     {
         static void Main()
         {
-            Console.WriteLine(RecursionExercise.FirstNNumbers(4));
+            Console.WriteLine(RecursionExercises.FirstNNumbers(4));
         }
     }
 }

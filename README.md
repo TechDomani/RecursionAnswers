@@ -8,7 +8,6 @@ There are stub functions in Recursion.Classes.RecursionExercise.cs<br>
 Some tests have already been written<br>
 You should make sure that these pass before submitting your work<br>
 You should make sure that every function you write has sufficient tests<br>
-Some of the functions will need more tests to be written for them<br>
 In addition you can do manual testing by calling your functions from main in Program.cs<br>
 
 ### 1. First N Numbers
