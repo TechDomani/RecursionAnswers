@@ -11,12 +11,12 @@ namespace Recursion.Classes
 		public List<T> IterativeSort(List<T> unsorted)
 		{			
 			if (unsorted == null || unsorted.Count == 0) { 
-				return new List<T> ();
+				return [];
 			}
 			Queue<List<T>> queue = new();
 			foreach (T item in unsorted)
 			{
-				queue.Enqueue(new List<T> { item });
+				queue.Enqueue([ item ]);
 			}
 			while (queue.Count > 1)
 			{
@@ -40,9 +40,9 @@ namespace Recursion.Classes
 			List<T> rightList = RecursiveSort(unsorted.Skip(mid).ToList());
 			return Sort(leftList, rightList);
 		}
-		private List<T> Sort(List<T> leftList, List<T> rightList)
+		private static List<T> Sort(List<T> leftList, List<T> rightList)
 		{
-			List<T> merged = new List<T>();
+			List<T> merged = [];
 			int leftPos = 0;
 			int rightPos = 0;
 			while (leftPos < leftList.Count && rightPos < rightList.Count) // Compare items

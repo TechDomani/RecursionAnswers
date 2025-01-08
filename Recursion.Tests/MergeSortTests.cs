@@ -15,8 +15,8 @@ namespace Recursion.Tests
 		[TestMethod]
 		public void TestMergeSortIterativeInt()
 		{
-			List<int> unsorted = new() { 22, 55, 12, 22};
-			List<int> expected = new() { 12, 22, 22, 55 };
+			List<int> unsorted = [ 22, 55, 12, 22];
+			List<int> expected = [ 12, 22, 22, 55];
 			MergeSort<int> mergeSort = new ();
 			CollectionAssert.AreEqual(expected, mergeSort.IterativeSort(unsorted));
 		}
@@ -25,8 +25,8 @@ namespace Recursion.Tests
 		[TestMethod]
 		public void TestMergeSortIterativeString()
 		{
-			List<string> unsorted = new() { "Jake", "Cape", "Apple" };
-			List<string> expected = new() { "Apple", "Cape", "Jake" };
+			List<string> unsorted = [ "Jake", "Cape", "Apple" ];
+			List<string> expected = [ "Apple", "Cape", "Jake" ];
 			MergeSort<string> mergeSort = new ();
 			CollectionAssert.AreEqual(expected, mergeSort.IterativeSort(unsorted));
 		}
@@ -34,8 +34,8 @@ namespace Recursion.Tests
 		[TestMethod]
 		public void TestMergeSortRecursiveInt()
 		{
-			List<int> unsorted = new() { 22, 55, 12, 22 };
-			List<int> expected = new() { 12, 22, 22, 55 };
+			List<int> unsorted = [ 22, 55, 12, 22 ];
+			List<int> expected = [ 12, 22, 22, 55 ];
 			MergeSort<int> mergeSort = new();
 			CollectionAssert.AreEqual(expected, mergeSort.RecursiveSort(unsorted));
 		}
@@ -44,8 +44,8 @@ namespace Recursion.Tests
 		[TestMethod]
 		public void TestMergeSortRecursiveString()
 		{
-			List<string> unsorted = new() { "Jake", "Cape", "Apple" };
-			List<string> expected = new() { "Apple", "Cape", "Jake" };
+			List<string> unsorted = [ "Jake", "Cape", "Apple" ];
+			List<string> expected = [ "Apple", "Cape", "Jake" ];
 			MergeSort<string> mergeSort = new();
 			CollectionAssert.AreEqual(expected, mergeSort.RecursiveSort(unsorted));
 		}
