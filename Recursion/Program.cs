@@ -7,7 +7,7 @@ namespace Recursion
     {
         static void Main()
         {
-            Console.WriteLine(string.Join(",", RecursionExercises.FirstNNumbers(4)));
+            Console.WriteLine(string.Join(",", RecursionExercises.FirstNNumbers(5)));
 
             MergeSort<string> mergeSort = new ();
             List<string> toSort = [ "Hello", "Hard", "Apple" ];
